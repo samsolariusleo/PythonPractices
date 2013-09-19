@@ -29,6 +29,9 @@ def prelimtest():
     elif not pattern.match(code):
         print("Invalid.")
         code = '-1'
+    else:
+        print("Invalid.")
+        code = '-1'
     return code
 
 def generatecheckdigit(code):
@@ -65,3 +68,4 @@ if code != '-1':
         print("Invalid. Expected checksum character is " + checkdigit)
     else:
         print("OK")
+
